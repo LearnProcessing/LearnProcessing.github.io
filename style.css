@@ -114,6 +114,10 @@ body {
     
 }
 
+#page-gif:hover {
+  opacity: 50%;
+}
+
 @keyframes text-flicker {
     0% {
       opacity:0.1;

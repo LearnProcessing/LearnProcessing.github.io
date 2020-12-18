@@ -150,6 +150,9 @@ function clearText(){
         
     
 }
+function reset(){
+    window.location.reload();
+}
 
 function checkRGB(){
     //console.log(i, j, level)
