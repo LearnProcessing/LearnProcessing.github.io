@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- saved from url=(0110)file:///Users/ayudyatriastika/Desktop/Rinaldi%20Adrian/Hacktiv8/phase0_FP/LearnProcessing.github.io/index.html -->
+<html lang="en" class="wf-creepster-n4-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Dukun RGB_files/style.css" type="text/css">
+    <link rel="icon" href="file:///Users/ayudyatriastika/Desktop/Rinaldi%20Adrian/Hacktiv8/phase0_FP/LearnProcessing.github.io/witch-face-867078.png" type="image/png">
+    <link rel="stylesheet" href="./Dukun RGB_files/l" media="all"><script src="./Dukun RGB_files/creepster.js"></script>
+    
+
+    <title>Dukun RGB</title>
+</head>
+<body>
+    <div style="text-align: center; border-style: solid; color:purple" id="project-name">
+        <h3 style="font-family: &quot;Courier New&quot;, sans-serif">Horaa Game Project</h3>
+    </div>
+    <h1 id="judul-game">Mbah Dukun RGB</h1>
+        <p id="introduction">Mbah Dukun sedang mengobati pasiennya. Bantu dia meracik ramuan mujarab untuk permintaan 5 klien Mbah Dukun! Campurkan komposisi warna Red Green Blue untuk membuat ramuan yang diinginkan Mbah Dukun</p>
+        <p style="text-align:center; margin:auto" id="referensi">
+            Lihat <a target="_blank" href="https://www.rapidtables.com/web/color/RGB_Color.html">buku mantra</a> ini jika kamu kesulitan.
+        </p>
+    
+        <label id="username-label" for="username-input">Input username :</label>
+        <input id="username-input" style="width:150px ;height:50px;" type="text" value="asisten">
+        <button id="next-button" style="width:150px; height:50px" onclick="getUserName();clearText();startDialog();">New Game</button>
+    
+    <!-- <button id="new-game" onclick="startNewGame()">New Game</button> -->
+    <p id="dialog-box"></p>
+    <div hidden="" id="potions">
+        <img id="red-potion" src="./Dukun RGB_files/potion-red.png">
+        <img id="green-potion" src="./Dukun RGB_files/potion-green.png">
+        <img id="red-potion" src="./Dukun RGB_files/potion-blue.png">
+    </div>
+    <div hidden="" id="range-input">
+        <input id="input-red" type="range" min="0" max="255" value="50" step="10" onclick="checkValue()">
+        <input id="input-green" type="range" min="0" max="255" value="50" step="10" onclick="checkValue()">
+        <input id="input-blue" type="range" min="0" max="255" value="50" step="10" onclick="checkValue()">
+        <button id="checkRGB" style="width:150px; height:50px" onclick="checkRGB()">Make RGB Potion</button>
+    </div>
+    <div hidden="" id="value-input">
+        <div style="color: red;" id="red-value">50</div>
+        <div style="color: green" id="green-value">50</div>
+        <div style="color: blue" id="blue-value">50</div>
+        <p id="color-box"></p>
+        
+    </div>
+
+    
+    <script src="./Dukun RGB_files/script.js"></script>
+
+</body></html>

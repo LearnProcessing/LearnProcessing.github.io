@@ -3,16 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.html" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" href="witch-face-867078.png" type="image/png">
+    <script src='http://use.edgefonts.net/creepster.js'></script>
     
 
     <title>Dukun RGB</title>
 </head>
 <body>
+    <div style="text-align: center; border-style: solid; color:purple" id="project-name">
+        <h3 style='font-family: "Courier New", sans-serif'>Horaa Game Project</h3>
+    </div>
+    <img style="position:fixed ; right:20%; top:10%" src = "talking_witch.gif">
     <h1 id="judul-game"></h1>
         <p id="introduction"></p>
-    
-        <button onclick="startNewGame()">New Game</button>
+        <p style="text-align:center; margin:auto" id="referensi">
+            Lihat <a target="_blank" href="https://www.rapidtables.com/web/color/RGB_Color.html">buku mantra</a> ini jika kamu kesulitan.
+        </p>
+    <div style="text-align:center; margin:auto">
+        <label id="username-label" for="username-input">Input username :</label>
+        <input id="username-input" style="width:150px ;height:50px;" type="text" value= "asisten">
+        <button id="next-button" style="width:150px; height:50px" onclick="getUserName();clearText();startDialog();">New Game</button>
+    </div>
+    <!-- <button id="new-game" onclick="startNewGame()">New Game</button> -->
+    <p style="text-align:center; margin-left:auto ; margin-right: auto;"  id="dialog-box"></p>
+    <div style="text-align:center; margin:auto" hidden id="potions">
+        <img id="red-potion" src="potion-red.png">
+        <img id="green-potion" src="potion-green.png">
+        <img id="red-potion" src="potion-blue.png">
+    </div>
+    <div style="text-align:center; margin:auto; margin-top:-5%; margin-left:10% ;z-index: 999;position:relative;" hidden id="range-input">
+        <input id="input-red" type="range" min="0" max="255" value="50" step="10" onclick="checkValue()">
+        <input id="input-green" type="range" min="0" max="255" value="50" step="10" onclick="checkValue()">
+        <input id="input-blue" type="range" min="0" max="255" value="50" step="10" onclick="checkValue()">
+        <button id="checkRGB" style="width:150px; height:50px" onclick="checkRGB()">Make RGB Potion</button>
+    </div>
+    <div style="text-align:center; margin:auto ; margin-top:-8%; margin-left:12%;font-family: 'Courier New', sans-serif; font-weight: bold; font-size: large;" hidden id="value-input">
+        <div style="color: red;" id="red-value"></div>
+        <div style="color: green" id="green-value"></div>
+        <div style="color: blue" id="blue-value"></div>
+        <p id="color-box"></p>
+        
+    </div>
+
     
     <script src="script.js"></script>
 </body>

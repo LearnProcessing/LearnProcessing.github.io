@@ -1,0 +1,170 @@
+* {
+    margin:0;
+    padding:0;
+}
+input {
+    border-style: solid;
+    border-color: white;
+    width: 200px;
+    height: 100px;
+    margin: 20px 50px;
+}
+
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Creepster', "Courier New", sans-serif
+}
+
+#referensi {
+    margin: 20px;
+    padding: 20px;
+}
+#dialog-box {
+    border-style: solid;
+    border-color: red;
+    border-width: thick;
+    box-shadow: 0px 0px 30px #949090 ;
+    width: 500px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+#new-game {
+    margin: 20px;
+    padding: 20px;
+}
+
+#judul-game {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    animation: text-flicker 3s linear infinite;
+    
+}
+
+#introduction {
+    margin: auto;
+    padding: 20px;
+    border-style: solid;
+    border-color: white;
+    width: 500px;
+    height: 75px;
+    letter-spacing: 2px;
+    color: red;
+    text-align: center;
+    border-radius: 8%;
+    
+}
+
+#red-potion{
+    width: 10%;
+    height: 10%;
+    /* border-style: solid;
+    border-color: white; */
+    margin: 20px 50px;
+}
+#blue-potion{
+    width: 10%;
+    height: 10%;
+    /* border-style: solid;
+    border-color: white; */
+    margin: 20px 50px;
+}
+#green-potion{
+    width: 10%;
+    height: 10%;
+    /* border-style: solid;
+    border-color: white; */
+    margin: 20px 50px;
+}
+
+#value-input p {
+    font-family: "Courier New";
+    font-weight: 800;
+    
+}
+
+
+
+#value-input div{
+    width: 50px;
+    height: 50px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 50%;
+    margin: 0px 100px;
+    padding: 20px 20px;
+    display: inline-block;
+    position: relative;
+}
+#color-box {
+    width: 100px;
+    height: 50px;
+    border-style: solid;
+    border-color: white;
+    margin: 0px 10px;
+    padding: 20px;
+    display: inline-block;
+    margin-left: -1%;
+    
+    
+}
+
+@keyframes text-flicker {
+    0% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    
+    2% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    8% {
+      opacity:0.1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    9% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+    }
+    12% {
+      opacity:0.1;
+      text-shadow: 0px 0px rgba(242, 22, 22, 1);
+    }
+    20% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+    }
+    25% {
+      opacity:0.3;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+    }
+    30% {
+      opacity:1;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+    }
+    
+    70% {
+      opacity:0.7;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+    }
+    
+    72% {
+      opacity:0.2;
+      text-shadow:0px 0px 29px rgba(242, 22, 22, 1)
+    }
+    
+    77% {
+      opacity:.9;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+    }
+    100% {
+      opacity:.9;
+      text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+    }
+  }
