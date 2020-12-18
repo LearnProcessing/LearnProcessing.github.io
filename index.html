@@ -6,11 +6,20 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="icon" href="witch-face-867078.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
-    
+    <script>
+        function play() {
+          var audio = document.getElementById("audio");
+          audio.play();
+        }
+      </script>
 
     <title>Dukun RGB</title>
 </head>
 <body>
+    <audio id="audio" autoplay>
+        <source src="Symmetry.mp3" type="audio/ogg">
+    </audio>
+
     <div style="text-align: center; border-style: solid; color:purple" id="project-name">
         <h3 style='font-family: "Courier New", sans-serif'>Horaa Game Project</h3>
     </div>
@@ -23,14 +32,14 @@
     <div style="text-align:center; margin:auto">
         <label id="username-label" for="username-input">Input username :</label>
         <input id="username-input" style="width:150px ;height:50px;" type="text" value= "asisten">
-        <button id="next-button" style="width:150px; height:50px" onclick="getUserName();clearText();startDialog();">New Game</button>
+        <button id="next-button" style="width:150px; height:50px" onclick="getUserName();clearText();startDialog();play()">New Game</button>
     </div>
     <!-- <button id="new-game" onclick="startNewGame()">New Game</button> -->
     <p style="text-align:center; margin-left:auto ; margin-right: auto;"  id="dialog-box"></p>
     <div style="text-align:center; margin:auto" hidden id="potions">
-        <img id="red-potion" src="potion-red.png">
-        <img id="green-potion" src="potion-green.png">
-        <img id="red-potion" src="potion-blue.png">
+        <img id="red-potion" src="potion-red.png" alt="red potion">
+        <img id="green-potion" src="potion-green.png" alt = "green potion">
+        <img id="blue-potion" src="potion-blue.png" alt="blue potion">
     </div>
     <div style="text-align:center; margin:auto; margin-top:-5%; margin-left:10% ;z-index: 999;position:relative;" hidden id="range-input">
         <input id="input-red" type="range" min="0" max="255" value="50" step="10" onclick="checkValue()">

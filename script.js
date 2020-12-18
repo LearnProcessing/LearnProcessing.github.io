@@ -14,6 +14,8 @@ var level2End = false
 var level3End = false
 var level4End = false
 
+//document.getElementsByTagName("audio").autoplay = true
+
 
 var nameSubmitted = false
 
