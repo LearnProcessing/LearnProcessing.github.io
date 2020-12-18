@@ -1,2 +1,2 @@
 # LearnProcessing.github.io
-semangat-ganbatte-pastibisa
+Dukun RGB bisa mengabulkan permohonan apa saja dengan ramuan Red Green Blue nya
