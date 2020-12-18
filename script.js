@@ -45,7 +45,9 @@ function checkValue() {
     document.getElementById("green-value").innerHTML = greenVal
     document.getElementById("blue-value").innerHTML = blueVal
 
-    document.getElementById("color-box").style.backgroundColor = `rgb(${redVal},${greenVal},${blueVal})`
+    document.getElementById("red-value").style.backgroundColor = `rgb(${redVal},${greenVal},${blueVal})`
+    document.getElementById("green-value").style.backgroundColor = `rgb(${redVal},${greenVal},${blueVal})`
+    document.getElementById("blue-value").style.backgroundColor = `rgb(${redVal},${greenVal},${blueVal})`
 }
 
 
